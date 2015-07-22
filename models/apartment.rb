@@ -18,9 +18,7 @@ class Apartment
 
 
   def add_tenant(tenant)
-    if (renters.length + 1 <= num_beds)
-      self.renters.push(tenant)
-    end
+    (renters.length + 1 <= num_beds) ? self.renters.push(tenant) : puts "Too many people!"
   end
 
 
